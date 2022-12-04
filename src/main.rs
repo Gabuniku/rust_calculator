@@ -1,5 +1,5 @@
 use std::{
-    io::{BufRead, Read, Write},
+    io::{BufRead, Write},
     num::ParseIntError,
 };
 
@@ -24,7 +24,7 @@ fn calc() {
     let mut input = String::new();
     std::io::stdin().lock().read_line(&mut input).unwrap();
     input = input.trim().to_string();
-    let result = token::parse(input).unwrap();
+    let result = token::execute(input).unwrap();
     println!("{}", result);
 }
 
@@ -34,7 +34,7 @@ fn main() {
     println!("+--------------------------------+");
     loop {
         let mode = match menu() {
-            Err(err) => {
+            Err(_err) => {
                 println!("Error");
                 continue;
             }
