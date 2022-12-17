@@ -1,3 +1,8 @@
+/**
+ * Rust Calculator
+ * token.rs
+ * (c) 2022 Gabuniku
+ */
 use std::num;
 use std::{f32::NAN, num::ParseFloatError};
 use std::{

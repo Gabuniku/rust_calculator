@@ -1,3 +1,8 @@
+/**
+ * Rust Calculator
+ * main.rs
+ * (c) 2022 Gabuniku
+ */
 use std::{
     io::{BufRead, Write},
     num::ParseIntError,
